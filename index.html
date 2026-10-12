@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#176b55">
+    <meta name="description"
+        content="MedTrack privacy policy. MedTrack is designed to work offline, keeping medication and health records on your device.">
+    <title>Privacy Policy — MedTrack</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #f5f8f7;
+            --surface: #ffffff;
+            --text: #172a25;
+            --muted: #52665f;
+            --primary: #176b55;
+            --primary-soft: #e0f2eb;
+            --border: #dce7e2;
+            --shadow: 0 12px 32px rgba(24, 60, 47, .07);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #101815;
+                --surface: #18221e;
+                --text: #e8f2ed;
+                --muted: #b0c2b9;
+                --primary: #83d5b5;
+                --primary-soft: #203d32;
+                --border: #2b3d35;
+                --shadow: 0 12px 32px rgba(0, 0, 0, .16);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .wrap {
+            width: min(100% - 32px, 820px);
+            margin: 0 auto;
+            padding: 44px 0 32px;
+        }
+
+        header {
+            margin-bottom: 24px;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+            font-weight: 800;
+            letter-spacing: .02em;
+        }
+
+        .brand-mark {
+            display: grid;
+            place-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 13px;
+            background: var(--primary-soft);
+            font-size: 22px;
+        }
+
+        h1 {
+            margin: 18px 0 4px;
+            font-size: clamp(2rem, 5vw, 2.7rem);
+            line-height: 1.15;
+            letter-spacing: -.035em;
+        }
+
+        .subtitle {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        main {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            padding: clamp(22px, 5vw, 38px);
+            box-shadow: var(--shadow);
+        }
+
+        .promise {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 20px;
+            background: var(--primary-soft);
+            border-radius: 16px;
+            color: var(--text);
+            font-size: 1.08rem;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+
+        .promise-icon {
+            font-size: 28px;
+            line-height: 1.2;
+            flex: 0 0 auto;
+        }
+
+        section {
+            padding: 23px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        section:last-of-type {
+            border-bottom: 0;
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 0 8px;
+            font-size: 1.12rem;
+            line-height: 1.4;
+        }
+
+        h2 span {
+            width: 27px;
+            text-align: center;
+            color: var(--primary);
+        }
+
+        section p {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        footer {
+            padding: 26px 8px 0;
+            text-align: center;
+            color: var(--muted);
+            font-size: .88rem;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 480px) {
+            .wrap {
+                width: min(100% - 20px, 820px);
+                padding-top: 26px;
+            }
+
+            main {
+                border-radius: 17px;
+            }
+
+            .promise {
+                padding: 16px;
+            }
+        }
+
+        @media print {
+            :root {
+                color-scheme: light;
+                --bg: #fff;
+                --surface: #fff;
+                --text: #111;
+                --muted: #333;
+                --primary: #176b55;
+                --primary-soft: #eaf5f0;
+                --border: #ddd;
+            }
+
+            .wrap {
+                width: 100%;
+                padding: 0;
+            }
+
+            main {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="brand"><span class="brand-mark" aria-hidden="true">✚</span><span>MedTrack</span></div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">How MedTrack handles your information</p>
+        </header>
+
+        <main>
+            <div class="promise">
+                <span class="promise-icon" aria-hidden="true">🛡️</span>
+                <div>MedTrack is a completely offline app. It does not collect or share any of your data.</div>
+            </div>
+
+            <section>
+                <h2><span aria-hidden="true">☁</span>No data collection</h2>
+                <p>MedTrack collects nothing about you. There are no analytics or tracking SDKs, no usage telemetry, no
+                    crash reports with personal information, and no advertising identifiers. We do not ask for an
+                    account, an email address, or a phone number — the app works fully without ever identifying you.</p>
+            </section>
+
+            <section>
+                <h2><span aria-hidden="true">⌁</span>No internet, no transmission</h2>
+                <p>The app has no internet connectivity at all. Every medication, dose record, journal entry, symptom
+                    note, doctor contact, and inventory count lives only in an encrypted database inside this device's
+                    storage. Nothing is uploaded to a server, because there is no server.</p>
+            </section>
+
+            <section>
+                <h2><span aria-hidden="true">🔒</span>No data sharing or selling</h2>
+                <p>We never sell, rent, trade, or share your data — with advertisers, brokers, researchers, or anyone
+                    else. No third-party SDKs run inside the app that could exfiltrate information. Your health data
+                    stays on this device unless you deliberately export it yourself.</p>
+            </section>
+
+            <section>
+                <h2><span aria-hidden="true">◷</span>Reminders stay on your device</h2>
+                <p>Medication reminders and alerts are scheduled locally through your operating system's own
+                    notification mechanism. They are not routed through any push-notification service, and no
+                    notification content leaves the device.</p>
+            </section>
+
+            <section>
+                <h2><span aria-hidden="true">📁</span>You control exports and backups</h2>
+                <p>Exporting data — via the encrypted backup file, CSV export, PDF report, or the home-screen widget —
+                    happens only when you explicitly trigger it, and the result is stored or shared solely where you
+                    choose. Backups are encrypted with keys held in this device's secure keystore.</p>
+            </section>
+
+            <section>
+                <h2><span aria-hidden="true">▤</span>Deleting the app deletes everything</h2>
+                <p>Because no copy of your data exists anywhere else, uninstalling MedTrack permanently removes every
+                    record it created (apart from any backup files you saved yourself, which you can delete at any
+                    time). There is no account to close and no server-side data to request removal of.</p>
+            </section>
+
+            <section>
+                <h2><span aria-hidden="true">♧</span>Children's privacy</h2>
+                <p>MedTrack does not knowingly collect personal information from anyone — including children — because
+                    it cannot collect personal information from anyone. Family profiles exist only locally on your own
+                    device.</p>
+            </section>
+
+            <section>
+                <h2><span aria-hidden="true">▦</span>Changes to this policy</h2>
+                <p>This policy describes the app as it works today. If a future version were ever to change how data is
+                    handled, this screen would be updated first and the new effective date shown below.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p><strong>Effective date: October 11, 2026</strong></p>
+            <p>MedTrack · Fully offline · Your data never leaves this device</p>
+        </footer>
+    </div>
+</body>
+
+</html>
